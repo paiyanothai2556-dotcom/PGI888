@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Lampang Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ========== ตั้งค่าพื้นฐาน ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #FFF8DC;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ========== Header ========== */
+    header {
+      background: linear-gradient(135deg, #F4A460, #D2691E);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo h1 {
+      color: white;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* ========== Hero ========== */
+    .hero {
+      height: 500px;
+      background:
+        linear-gradient(rgba(244,164,96,0.8), rgba(210,105,30,0.8)),
+        url('images/lampang2.jpg') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-content h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: #FFD700;
+      color: #333;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* ========== Section ========== */
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      color: #8B4513;
+      margin: 60px 0 40px;
+    }
+
+    .about {
+      background: white;
+      padding: 80px 0;
+    }
+
+    .content-wrapper {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .content-image img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 768px) {
+      header .container,
+      .content-wrapper {
+        flex-direction: column;
+      }
+
+      .hero-content h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1>ลำปาง</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href=">หน้าแรก</a></li>
+        <li><a href=">สถานที่ท่องเที่ยว</a></li>
+        <li><a href=">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>ยินดีต้อนรับสู่ลำปาง</h2>
+    <p>เมืองแห่งรถม้าและวัดงาม</p>
+    <a href=" class="btn">ดูเพิ่มเติม</a>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <h2 class="section-title">เกี่ยวกับลำปาง</h2>
+
+    <div class="content-wrapper">
+      <div class="content-text">
+        <p>
+          ลำปางเป็นจังหวัดที่มีเอกลักษณ์ทางวัฒนธรรม
+          เต็มไปด้วยวัดเก่าแก่และธรรมชาติที่สวยงาม
+        </p>
+      </div>
+
+      <div class="content-image">
+        <img src="images/lampang1.jpg" alt="ลำปาง">
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
